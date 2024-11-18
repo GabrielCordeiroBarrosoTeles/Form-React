@@ -147,3 +147,65 @@
       padding: 10px;
     }
   }
+
+  /* Estilo geral para os botões */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Personalização de ícones */
+button span {
+  margin-right: 8px;
+}
+
+/* Botão de voltar */
+button[type="button"]:first-child {
+  background-color: #ef4a4a;
+}
+
+button[type="button"]:first-child:hover {
+  background-color: #ef4a4a;
+}
+
+/* Botão de avançar */
+button[type="button"]:nth-child(2) {
+  background-color: #2196F3;
+}
+
+button[type="button"]:nth-child(2):hover {
+  background-color: #1976D2;
+}
+
+/* Botão de enviar */
+button[type="button"]:last-child {
+  background-color: #5ecfff;
+}
+
+button[type="button"]:last-child:hover {
+  background-color: #5ecfff;
+}
