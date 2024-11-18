@@ -1,0 +1,149 @@
+/* App base styles */
+.app {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cabeçalho */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Formulário */
+  .form-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+  }
+  
+  .form-container form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .inputs-container {
+    min-height: 280px;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  input,
+  textarea {
+    padding: .6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  /* Ações */
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .actions button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #DFDFDF;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .actions button:hover {
+    background-color: #CFCF;
+  }
+  
+  /* Responsividade: Ajuste para dispositivos menores */
+  
+  /* Tablet (768px ou menos) */
+  @media (max-width: 768px) {
+    .header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form-container {
+      padding: 1rem;
+    }
+  
+    .form-container form {
+      max-width: 100%;
+    }
+  
+    .inputs-container {
+      min-height: auto;
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+  
+    .actions button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
+  /* Mobile (480px ou menos) */
+  @media (max-width: 480px) {
+    .header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-container {
+      padding: 1rem;
+    }
+  
+    .actions button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .form-control label {
+      font-size: 0.8rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  
+    .inputs-container {
+      padding: 10px;
+    }
+  }
